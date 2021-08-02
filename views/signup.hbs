@@ -1,0 +1,48 @@
+{{> welcomemenu id="signup"}}
+
+<section class="ui center aligned middle aligned inverted blue segment">
+    <h1 class="ui header">
+        Welcome to WeatherTop 1000 - Version 4: Release 2
+    </h1>
+    <p>
+        This is a small weather APP by WeatherTop. Login to start using the app. If you are a new user please register
+        as a new user.
+    </p>
+</section>
+<div class="ui two column grid basic middle aligned segment">
+    <div class="column">
+        <form class="ui stacked segment form" action="/register" method="POST">
+            <h3 class="ui header">Register</h3>
+            <div class="two fields">
+                <div class="field">
+                    <label>First Name</label>
+                    <input placeholder="First Name" type="text" name="firstname">
+                </div>
+                <div class="field">
+                    <label>Last Name</label>
+                    <input placeholder="Last Name" type="text" name="lastname">
+                </div>
+            </div>
+            <div class="field">
+                <label>Enter your email</label>
+                <input placeholder="Email" type="email" name="email">
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <!--Validation of input-->
+                <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                       title="Please try again  - password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                       required>
+                <p>Please note the password must contain at least one number, one uppercase letter, lowercase letters, and at
+                    least 8 or more characters</p>
+            </div>
+            <button class="ui blue submit button">Submit</button>
+        </form>
+    </div>
+    <div class="column">
+        <img class="ui medium rounded image" src="https://cdn.glitch.com/fe0e714a-8b5b-4d98-912f-7fcd6fc90426%2Fsignup-icon.png?v=1627934766231">
+    </div>
+</div>
+<div class="ui center aligned middle aligned inverted blue footer segment">
+    <p>© 2021 WeatherTop Inc.</p>
+</div>

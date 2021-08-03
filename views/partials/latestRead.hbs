@@ -1,0 +1,76 @@
+<!--  Partial to display latest reading data for a station in inverted segments.-->
+
+<div class="ui five column divided grid">
+    <div class="stretched row">
+        <div class="column">
+            <div class="ui inverted segment">
+                <h3>Station: &ensp; <i class="white map marker alternate low icon"></i></h3>
+                <h2> {_station.name}</h2>
+                <p>Lat: {_station.latitude}</p>
+                <p>Long: {_station.longitude}</p>
+            </div>
+        </div>
+        <!--  If statement to avoid no data to display -->
+        <div class="column">
+            <div class="ui inverted red segment">
+                <h3>Weather: </h3>
+                <p>${_weatherCode}</p>
+                #{if _weatherCode =="Clear"}
+                &ensp;<i class="white huge sun outline icon"></i>
+                #{/if}
+                #{if _weatherCode =="Partial Clouds"}
+                &ensp;<i class="white huge cloud sun icon"></i>
+                #{/if}
+                #{if _weatherCode == "Cloudy"}
+                &ensp;<i class="white huge cloud icon"></i>
+                #{/if}
+                #{if _weatherCode == "Light Showers"}
+                &ensp;<i class="white huge cloud rain icon"></i>
+                #{/if}
+                #{if _weatherCode == "Heavy Showers"}
+                &ensp;<i class="white huge cloud showers heavy icon"></i>
+                #{/if}
+                #{if _weatherCode == "Rain"}
+                &ensp;<i class="white huge umbrella icon"></i>
+                #{/if}
+                #{if _weatherCode == "Snow"}
+                &ensp;<i class="white huge snowflake icon"></i>
+                #{/if}
+                #{if _weatherCode == "Thunder"}
+                &ensp;<i class="white huge bolt icon"></i>
+                #{/if}
+                #{if _weatherCode == "Crap Data"}
+                &ensp;<i class="white huge skull crossbones icon"></i>
+                #{/if}
+            </div>
+        </div>
+        <div class="column">
+            <div class="ui inverted blue segment">
+                <h3>Temperature: &ensp; <i class="white temperature low icon"></i></h3>
+                <p> ${_station.readings.temperature.last()} Celsius</p>
+                <!--  Fahrenheit calculation done with HTML code -->
+                <p>${_station.readings.temperature.last()*9/5+32} Fahrenheit</p>
+                <p>Min: ${_minTemperature} C</p>
+                <p>Max: ${_maxTemperature} C</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="ui inverted green segment">
+                <h3>Wind:&ensp; <i class="white wind icon"></i></h3>
+                <p>Strength: ${_beauCode} bft</p>
+                <p>Direction: ${_compassDirection}</p>
+                <p>Feels like: ${_windChillTemp}</p>
+                <p>Min: ${_minWindSpeed}</p>
+                <p>Max: ${_maxWindSpeed}</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="ui inverted purple segment">
+                <h3>Pressure: &ensp; <i class="white chart bar icon"></i></h3>
+                <p>${_station.readings.pressure.last()} hPa </p>
+                <p>Min: ${_minPressure}</p>
+                <p>Max: ${_maxPressure}</p>
+            </div>
+        </div>
+    </div>
+</div>

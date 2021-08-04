@@ -19,6 +19,7 @@ router.post("/authenticate", accounts.authenticate);
 router.get("/dashboard", dashboard.index);
 router.get("/dashboard/deleteplaylist/:id", dashboard.deletePlaylist);
 router.post("/dashboard/addplaylist", dashboard.addPlaylist);
+router.post("/dashboard/addstation", dashboard.addStation);
 
 router.get("/about", about.index);
 router.get("/playlist/:id", playlist.index);

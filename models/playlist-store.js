@@ -9,20 +9,38 @@ const playlistStore = {
   }),
   collection: "playlistCollection",
 
+   
   getAllPlaylists() {
+    return this.store.findAll(this.collection);
+  },
+  
+    getAllStations() {
     return this.store.findAll(this.collection);
   },
 
   getPlaylist(id) {
     return this.store.findOneBy(this.collection, { id: id });
   },
+  
+    getStation(id) {
+    return this.store.findOneBy(this.collection, { id: id });
+  },
 
   getUserPlaylists(userid) {
+    return this.store.findBy(this.collection, { userid: userid });
+  },
+  
+    getUserStations(userid) {
     return this.store.findBy(this.collection, { userid: userid });
   },
 
   addPlaylist(playlist) {
     this.store.add(this.collection, playlist);
+    this.store.save();
+  },
+  
+   addStation(station) {
+    this.store.add(this.collection, station);
     this.store.save();
   },
 

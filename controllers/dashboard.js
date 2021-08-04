@@ -35,7 +35,20 @@ const dashboard = {
     logger.debug("Creating a new Playlist", newPlayList);
     playlistStore.addPlaylist(newPlayList);
     response.redirect("/dashboard");
+  },
+    addStation(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
+    const newStation = {
+      id: uuid.v1(),
+      userid: loggedInUser.id,
+      title: request.body.title,
+      songs: []
+    };
+    logger.debug("Creating a new Station", newStation);
+    playlistStore.addStation(newStation);
+    response.redirect("/dashboard");
   }
+  
 };
 
 module.exports = dashboard;

@@ -1,0 +1,37 @@
+<table class="ui table">
+  <thead>
+    <tr>
+      <th>Reading</th>
+      <th>Artist</th>
+      <th>Duration</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each station.readings}}
+      <tr>
+        <td>
+          {{title}}
+        </td>
+        <td>
+          {{artist}}
+        </td>
+        <td>
+          {{duration}}
+        </td>
+        <td>
+          <a href="/reading/{{../station.id}}/editreading/{{id}}" class="ui icon button">
+            <i class="pencil alternate icon"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/station/{{../station.id}}/deletereading/{{id}}" class="ui icon button">
+            <i class="icon trash"></i>
+          </a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+

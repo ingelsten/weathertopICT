@@ -20,7 +20,7 @@ const accounts = {
   },
 
   logout(request, response) {
-    response.cookie("playlist", "");
+    response.cookie("station", "");
     response.redirect("/");
   },
 
@@ -43,7 +43,7 @@ const accounts = {
     const user = userstore.getUserByEmail(request.body.email);
     const password = userstore.getUserByPassword(request.body.password);
     if (user&&password) {
-      response.cookie("playlist", user.email);
+      response.cookie("station", user.email);
       logger.info(`logging in ${user.email}`);
       response.redirect("/dashboard");
     } else {
@@ -52,7 +52,7 @@ const accounts = {
   },
 
   getCurrentUser(request) {
-    const userEmail = request.cookies.playlist;
+    const userEmail = request.cookies.station;
     return userstore.getUserByEmail(userEmail);
   }
 };

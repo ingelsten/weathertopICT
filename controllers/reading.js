@@ -23,8 +23,13 @@ const reading = {
     const newReading = {
       title: request.body.title,
       artist: request.body.artist,
+      weatherCode:request.body.weatherCode,
+      temperature:request.body.temperature,
+      windDirection:request.body.windDirection,
+      windSpeed:request.body.windSpeed,
+      pressure:request.body.pressure,
       duration: Number(request.body.duration)
-    };
+       };
     logger.debug(`Updating Reading ${readingId} from Station ${stationId}`);
     stationStore.updateReading(reading, newReading);
     response.redirect("/station/" + stationId);

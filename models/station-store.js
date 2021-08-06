@@ -69,9 +69,12 @@ const stationStore = {
   },
 
   updateReading(reading, updatedReading) {
-    reading.title = updatedReading.title;
-    reading.artist = updatedReading.artist;
-    reading.duration = updatedReading.duration;
+    reading.weatherCode = updatedReading.weatherCode,
+    reading.temperature = updatedReading.temperature,
+    reading.windDirection = updatedReading.windDirection,
+    reading.windSpeed = updatedReading.windSpeed,
+    reading.pressure = updatedReading.pressure,
+      
     this.store.save();
   }
 };

@@ -3,14 +3,21 @@
     {
       "id": "8b301260-d267-11eb-a8f7-591ae1064ded",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Beethoven Sonatas",
-      "duration": 16,
+      "name": "Clonakilty",
+      "latitude": "1.0",
+      "longitude": "2.0",
+      "duration": null,
       "readings": [
         {
           "id": "04",
           "title": "Piano Sonata No. 3",
           "artist": "Beethoven",
           "genre": "Classical",
+          "weatherCode": "100",
+          "temperature": "10",
+          "windDirection": "180",
+          "windSpeed": "18",
+          "pressure": "900",
           "duration": 5
         },
         {
@@ -18,6 +25,11 @@
           "title": "Piano Sonata No. 7",
           "artist": "Beethoven",
           "genre": "Classical",
+          "weatherCode": "100",
+          "temperature": "10",
+          "windDirection": "180",
+          "windSpeed": "18",
+          "pressure": "900",
           "duration": 6
         },
         {
@@ -25,33 +37,33 @@
           "title": "Piano Sonata No. 10",
           "artist": "Beethoven",
           "genre": "Classical",
+          "weatherCode": "100",
+          "temperature": "10",
+          "windDirection": "180",
+          "windSpeed": "18",
+          "pressure": "900",
           "duration": 4
-        },
-        {
-          "id": "462375e0-f52b-11eb-a2c3-77e3a819440c",
-          "title": "Sonata 1",
-          "artist": "Anders",
-          "duration": 1
         }
       ]
     },
     {
-      "id": "7be8a1d0-f50f-11eb-a9d8-5788c17a2fe3",
-      "userid": "ea296a00-f3cd-11eb-adc3-ababa3232722",
-      "title": "Anders",
-      "songs": []
-    },
-    {
-      "id": "6e605bf0-f511-11eb-ab03-8d9ccaea9322",
+      "id": "a0c09030-f690-11eb-a926-f9529289c910",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Anders",
-      "songs": []
-    },
-    {
-      "id": "3cc6e810-f51c-11eb-966f-d555d777fba9",
-      "userid": "ea296a00-f3cd-11eb-adc3-ababa3232722",
-      "title": "Project Manager - Electrical",
-      "songs": []
+      "name": "Bandon",
+      "latitude": "0.0",
+      "longitude": "0.0",
+      "readings": [
+        {
+          "id": "a4ec5f90-f690-11eb-a926-f9529289c910",
+          "weatherCode": "100",
+          "temperature": "0",
+          "windDirection": "0",
+          "windSpeed": "1",
+          "pressure": "1000",
+          "duration": null
+        }
+      ],
+      "duration": null
     }
   ]
 }

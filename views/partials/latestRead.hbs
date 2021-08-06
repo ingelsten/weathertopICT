@@ -5,16 +5,16 @@
         <div class="column">
             <div class="ui inverted segment">
                 <h3>Station: &ensp; <i class="white map marker alternate low icon"></i></h3>
-                <h2> {{station.name}}</h2>
-                <p>Lat: {{_station.latitude}}</p>
-                <p>Long: {{_station.longitude}}</p>
+                <h4> {{station.name}}</h2>
+                <p>Lat: {{station.latitude}}</p>
+                <p>Long: {{station.longitude}}</p>
             </div>
         </div>
         <!--  If statement to avoid no data to display -->
         <div class="column">
             <div class="ui inverted red segment">
                 <h3>Weather: </h3>
-                <p>{{_weatherCode}}</p>
+                <p>{{weatherCode}}</p>
               <!--
               if {_weatherCode = "Clear"}}
                 &ensp;<i class="white huge sun outline icon"></i>

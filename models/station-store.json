@@ -18,7 +18,7 @@
           "windDirection": "180",
           "windSpeed": "18",
           "pressure": "900",
-          "duration": 5
+          "duration": null
         },
         {
           "id": "05",
@@ -30,7 +30,7 @@
           "windDirection": "180",
           "windSpeed": "18",
           "pressure": "900",
-          "duration": 6
+          "duration": null
         },
         {
           "id": "06",
@@ -42,7 +42,25 @@
           "windDirection": "180",
           "windSpeed": "18",
           "pressure": "900",
-          "duration": 4
+          "duration": null
+        },
+        {
+          "id": "439e6380-f85e-11eb-8fef-87bec2eecaac",
+          "weatherCode": "200",
+          "temperature": "0",
+          "windDirection": "0",
+          "windSpeed": "1",
+          "pressure": "1000",
+          "duration": null
+        },
+        {
+          "id": "5a8dd170-f85e-11eb-8fef-87bec2eecaac",
+          "weatherCode": "100",
+          "temperature": "0",
+          "windDirection": "0",
+          "windSpeed": "1",
+          "pressure": "1000",
+          "duration": null
         }
       ]
     },

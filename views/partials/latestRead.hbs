@@ -4,17 +4,18 @@
     <div class="stretched row">
         <div class="column">
             <div class="ui inverted segment">
-                <h3>Station: &ensp; <i class="white map marker alternate low icon"></i></h3>
-                <h4> {{station.name}}</h2>
+                <h2>Station: &ensp; <i class="white map marker alternate low icon"></i></h2>
+                <h3> {{station.name}}</h2>
                 <p>Lat: {{station.latitude}}</p>
                 <p>Long: {{station.longitude}}</p>
+              <p>Long: {{station.longitude}}</p>
             </div>
         </div>
         <!--  If statement to avoid no data to display -->
         <div class="column">
             <div class="ui inverted red segment">
                 <h3>Weather: </h3>
-                <p>{{weatherCode}}</p>
+                <p>{{shortestReading.weatherCode}}</p>
               <!--
               if {_weatherCode = "Clear"}}
                 &ensp;<i class="white huge sun outline icon"></i>

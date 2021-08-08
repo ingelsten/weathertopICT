@@ -26,7 +26,7 @@ const reading = {
       weatherCode:request.body.weatherCode,
       temperature:request.body.temperature,
       windDirection:request.body.windDirection,
-      windSpeed:request.body.windSpeed,
+      windSpeed:Number(request.body.windSpeed),
       pressure:request.body.pressure,
       duration: Number(request.body.duration)
        };

@@ -8,52 +8,21 @@
                 <h3> {{station.name}}</h2>
                 <p>Lat: {{station.latitude}}</p>
                 <p>Long: {{station.longitude}}</p>
-              <p>Long: {{station.longitude}}</p>
-            </div>
+              </div>
         </div>
         <!--  If statement to avoid no data to display -->
         <div class="column">
             <div class="ui inverted red segment">
                 <h3>Weather: </h3>
                 <p>{{shortestReading.weatherCode}}</p>
-              <!--
-              if {_weatherCode = "Clear"}}
-                &ensp;<i class="white huge sun outline icon"></i>
-             <!--   {/if}}
-                if {_weatherCode ="Partial Clouds"}}
-                &ensp;<i class="white huge cloud sun icon"></i>
-            {/if}}
-            
-                             #{if _weatherCode == "Cloudy"}
-                &ensp;<i class="white huge cloud icon"></i>
-                  {/if}}
-                #{if _weatherCode == "Light Showers"}
-                &ensp;<i class="white huge cloud rain icon"></i>
-                  {/if}}
-                #{if _weatherCode == "Heavy Showers"}
-                &ensp;<i class="white huge cloud showers heavy icon"></i>
-                  {/if}}
-                #{if _weatherCode == "Rain"}
-                &ensp;<i class="white huge umbrella icon"></i>
-                  {/if}}
-                #{if _weatherCode == "Snow"}
-                &ensp;<i class="white huge snowflake icon"></i>
-                #{/if}
-                #{if _weatherCode == "Thunder"}
-                &ensp;<i class="white huge bolt icon"></i>
-                #{/if}
-                #{if _weatherCode == "Crap Data"}
-                &ensp;<i class="white huge skull crossbones icon"></i>
-                #{/if}
-              -->
-                </div>
+                 </div>
         </div>
         <div class="column">
             <div class="ui inverted blue segment">
                 <h3>Temperature: &ensp; <i class="white temperature low icon"></i></h3>
-                <p> {{_station.readings.temperature.last}} Celsius</p>
+                <p> {{shortestReading.temperature}} Celsius</p>
                 <!--  Fahrenheit calculation done with HTML code -->
-                <p>{{_station.readings.temperature.last}} Fahrenheit</p>
+                <p>{{fahrenheit}} Fahrenheit</p>
                 <p>Min: {{_minTemperature}} C</p>
                 <p>Max: {{_maxTemperature}} C</p>
             </div>
@@ -61,9 +30,9 @@
         <div class="column">
             <div class="ui inverted green segment">
                 <h3>Wind:&ensp; <i class="white wind icon"></i></h3>
-                <p>Strength: {{_beauCode}} bft</p>
-                <p>Direction: {{_compassDirection}}</p>
-                <p>Feels like: {{_windChillTemp}}</p>
+                <p>Strength: {{beaufort}} bft</p>
+                <p>Direction: {{compassDirection}}</p>
+                <p>Feels like: {{windChillTemp}}</p>
                 <p>Min: {{_minWindSpeed}}</p>
                 <p>Max: {{_maxWindSpeed}}</p>
             </div>
@@ -71,7 +40,7 @@
         <div class="column">
             <div class="ui inverted purple segment">
                 <h3>Pressure: &ensp; <i class="white chart bar icon"></i></h3>
-                <p>{{_station.readings.pressure.last}} hPa </p>
+                <p>{{shortestReading.pressure}} hPa </p>
                 <p>Min: {{_minPressure}}</p>
                 <p>Max: {{_maxPressure}}</p>
             </div>

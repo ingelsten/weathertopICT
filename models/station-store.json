@@ -61,6 +61,33 @@
           "windSpeed": "1",
           "pressure": "1000",
           "duration": null
+        },
+        {
+          "id": "2763f790-f87f-11eb-a7b7-ed70d9b4a57d",
+          "weatherCode": "100",
+          "temperature": "10",
+          "windDirection": "0",
+          "windSpeed": "1",
+          "pressure": "1000",
+          "duration": null
+        },
+        {
+          "id": "a8bd85e0-f87f-11eb-aeaf-bfdf6af4da73",
+          "weatherCode": "100",
+          "temperature": "40",
+          "windDirection": "0",
+          "windSpeed": "40",
+          "pressure": "1000",
+          "duration": null
+        },
+        {
+          "id": "d2ad7780-f883-11eb-b90e-6b6956ff16e6",
+          "weatherCode": "100",
+          "temperature": "-10",
+          "windDirection": "0",
+          "windSpeed": "40",
+          "pressure": "1000",
+          "duration": null
         }
       ]
     },
@@ -77,6 +104,24 @@
           "temperature": "0",
           "windDirection": "0",
           "windSpeed": "1",
+          "pressure": "1000",
+          "duration": null
+        },
+        {
+          "id": "03648b90-f882-11eb-bd19-152bcb2c761d",
+          "weatherCode": "100",
+          "temperature": "1",
+          "windDirection": "0",
+          "windSpeed": "1",
+          "pressure": "1000",
+          "duration": null
+        },
+        {
+          "id": "1e547db0-f883-11eb-9313-99530872c480",
+          "weatherCode": "200",
+          "temperature": "10",
+          "windDirection": "100",
+          "windSpeed": "100",
           "pressure": "1000",
           "duration": null
         }

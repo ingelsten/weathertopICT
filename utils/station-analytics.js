@@ -95,7 +95,53 @@ const stationAnalytics = {
   let windChillTemp;
   windChillTemp = (13.12 + (0.6215 * temperature) - (11.37 * Math.pow(windSpeed, 0.16)) + (0.3965 * temperature * Math.pow(windSpeed, 0.16)));
    return Math.round(windChillTemp);
-  }
+  },
+   
+  codeToText(weatherCode) {
+    switch (weatherCode) {
+      case 100:
+        return "Clear";
+      case 200:
+        return "Partial Clouds";
+      case 300:
+        return "Cloudy";
+      case 400:
+        return "Light Showers";
+      case 500:
+        return "Heavy Showers";
+      case 600:
+        return "Rain";
+      case 700:
+        return "Snow";
+      case 800:
+        return "Thunder";
+      default:
+        return "Crap Data";
+    }
+  },
+  
+    codeToSymbol(weatherCode) {
+    switch (weatherCode) {
+      case 100:
+        return "white huge sun outline icon";
+      case 200:
+        return "white huge cloud sun icon";
+      case 300:
+        return "white huge cloud icon";
+      case 400:
+        return "white huge cloud rain icon";
+      case 500:
+        return "white huge cloud showers heavy icon";
+      case 600:
+        return "white huge umbrella icon";
+      case 700:
+        return "white huge snowflake icon";
+      case 800:
+        return "white huge bolt icon";
+      default:
+        return "white huge skull crossbones icon";
+    }
+  },
 };
 
 module.exports = stationAnalytics;

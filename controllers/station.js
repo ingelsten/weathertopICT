@@ -13,6 +13,8 @@ const station = {
     let beaufort = null;
     let compassDirection = null;
     let windChillTemp = null;
+    let codeToText = null;
+    let codeToSymbol = null;
     logger.debug("Station id = ", stationId);
 
     
@@ -23,6 +25,10 @@ const station = {
     beaufort = stationAnalytics.beaufort(Number(shortestReading.windSpeed));
     compassDirection = stationAnalytics.compassDirection(Number(shortestReading.windDirection));
     windChillTemp = stationAnalytics.windChillTemp(shortestReading.temperature, shortestReading.windSpeed);
+    codeToText = stationAnalytics.codeToText(Number(shortestReading.weatherCode));
+    codeToSymbol = stationAnalytics.codeToSymbol (Number(shortestReading.weatherCode));
+ 
+   
      }
     
 
@@ -34,6 +40,9 @@ const station = {
       beaufort : beaufort,
       compassDirection:compassDirection,
       windChillTemp:windChillTemp,
+      codeToText:codeToText,
+      codeToSymbol:codeToSymbol
+      
     };
     response.render("station", viewData);
   },

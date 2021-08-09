@@ -45,15 +45,6 @@
           "duration": null
         },
         {
-          "id": "439e6380-f85e-11eb-8fef-87bec2eecaac",
-          "weatherCode": "200",
-          "temperature": "0",
-          "windDirection": "0",
-          "windSpeed": "1",
-          "pressure": "1000",
-          "duration": null
-        },
-        {
           "id": "5a8dd170-f85e-11eb-8fef-87bec2eecaac",
           "weatherCode": "100",
           "temperature": "0",
@@ -75,15 +66,6 @@
           "id": "a8bd85e0-f87f-11eb-aeaf-bfdf6af4da73",
           "weatherCode": "100",
           "temperature": "40",
-          "windDirection": "0",
-          "windSpeed": "40",
-          "pressure": "1000",
-          "duration": null
-        },
-        {
-          "id": "d2ad7780-f883-11eb-b90e-6b6956ff16e6",
-          "weatherCode": "100",
-          "temperature": "-10",
           "windDirection": "0",
           "windSpeed": "40",
           "pressure": "1000",
@@ -122,6 +104,25 @@
           "temperature": "10",
           "windDirection": "100",
           "windSpeed": "100",
+          "pressure": "1000",
+          "duration": null
+        }
+      ],
+      "duration": null
+    },
+    {
+      "id": "843242b0-f884-11eb-b90e-6b6956ff16e6",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Bantry",
+      "latitude": "0.0",
+      "longitude": "0.0",
+      "readings": [
+        {
+          "id": "86e49170-f884-11eb-b90e-6b6956ff16e6",
+          "weatherCode": "100",
+          "temperature": "0",
+          "windDirection": "0",
+          "windSpeed": "1",
           "pressure": "1000",
           "duration": null
         }

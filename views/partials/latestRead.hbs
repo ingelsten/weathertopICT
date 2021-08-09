@@ -14,8 +14,9 @@
         <div class="column">
             <div class="ui inverted red segment">
                 <h3>Weather: </h3>
-                <p>{{shortestReading.weatherCode}}</p>
-                 </div>
+                <p>{{codeToText}}</p>
+                <i class="{{codeToSymbol}}"></i>
+            </div>
         </div>
         <div class="column">
             <div class="ui inverted blue segment">
@@ -23,7 +24,7 @@
                 <p> {{shortestReading.temperature}} Celsius</p>
                 <!--  Fahrenheit calculation done with HTML code -->
                 <p>{{fahrenheit}} Fahrenheit</p>
-                <p>Min: {{_minTemperature}} C</p>
+                <p>Min: {{minTemperature}} C</p>
                 <p>Max: {{_maxTemperature}} C</p>
             </div>
         </div>

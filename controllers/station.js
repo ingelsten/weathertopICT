@@ -15,6 +15,12 @@ const station = {
     let windChillTemp = null;
     let codeToText = null;
     let codeToSymbol = null;
+    let minTemperature = null;
+    let maxTemperature = null;
+    let minWindSpeed = null;
+    let maxWindSpeed = null;
+    let minPressure = null;
+    let maxPressure = null;
     logger.debug("Station id = ", stationId);
 
     
@@ -27,9 +33,16 @@ const station = {
     windChillTemp = stationAnalytics.windChillTemp(shortestReading.temperature, shortestReading.windSpeed);
     codeToText = stationAnalytics.codeToText(Number(shortestReading.weatherCode));
     codeToSymbol = stationAnalytics.codeToSymbol (Number(shortestReading.weatherCode));
- 
+    minTemperature = stationAnalytics.getMinTemperature(station);
+    maxTemperature = stationAnalytics.getMaxTemperature(station);
+    minWindSpeed = stationAnalytics.getMinWindSpeed(station);
+    maxWindSpeed= stationAnalytics.getMaxWindSpeed(station);
+    minPressure = stationAnalytics.getMinPressure(station);
+    maxPressure= stationAnalytics.getMaxPressure(station);
    
      }
+    
+    
     
 
     const viewData = {
@@ -41,7 +54,13 @@ const station = {
       compassDirection:compassDirection,
       windChillTemp:windChillTemp,
       codeToText:codeToText,
-      codeToSymbol:codeToSymbol
+      codeToSymbol:codeToSymbol,
+      minTemperature : minTemperature,
+      maxTemperature : maxTemperature,
+      minWindSpeed:minWindSpeed,
+      maxWindSpeed:maxWindSpeed,
+      minPressure:minPressure,
+      maxPressure:maxPressure
       
     };
     response.render("station", viewData);

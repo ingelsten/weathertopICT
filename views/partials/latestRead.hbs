@@ -25,7 +25,7 @@
                 <!--  Fahrenheit calculation done with HTML code -->
                 <p>{{fahrenheit}} Fahrenheit</p>
                 <p>Min: {{minTemperature}} C</p>
-                <p>Max: {{_maxTemperature}} C</p>
+                <p>Max: {{maxTemperature}} C</p>
             </div>
         </div>
         <div class="column">
@@ -33,17 +33,17 @@
                 <h3>Wind:&ensp; <i class="white wind icon"></i></h3>
                 <p>Strength: {{beaufort}} bft</p>
                 <p>Direction: {{compassDirection}}</p>
-                <p>Feels like: {{windChillTemp}}</p>
-                <p>Min: {{_minWindSpeed}}</p>
-                <p>Max: {{_maxWindSpeed}}</p>
+                <p>Feels like: {{windChillTemp}} C</p>
+                <p>Min: {{minWindSpeed}} km/h</p>
+                <p>Max: {{maxWindSpeed}} km/h</p>
             </div>
         </div>
         <div class="column">
             <div class="ui inverted purple segment">
                 <h3>Pressure: &ensp; <i class="white chart bar icon"></i></h3>
                 <p>{{shortestReading.pressure}} hPa </p>
-                <p>Min: {{_minPressure}}</p>
-                <p>Max: {{_maxPressure}}</p>
+                <p>Min: {{minPressure}} hPa</p>
+                <p>Max: {{maxPressure}} hPa</p>
             </div>
         </div>
     </div>

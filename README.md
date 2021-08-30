@@ -1,4 +1,4 @@
-Welcome to the Playlist 6
+Welcome to the WeatherTop 1000  
 =========================
 
-Version 6 of the Playlist application
+Release 2 of the Weathertop application

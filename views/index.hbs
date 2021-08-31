@@ -1,0 +1,30 @@
+{{> welcomemenu id='login' }}
+
+<section class="ui center aligned middle aligned inverted blue segment">
+    <h1 class="ui header">
+        Welcome to WeatherTop 1000 - Version 4: Release 2
+    </h1>
+    <p>
+        This is a small weather APP by WeatherTop.
+    </p>
+</section>
+<div class="ui two column middle aligned grid basic segment">
+    <div class="column">
+        <form class="ui stacked segment form" action="/authenticate" method="POST">
+            <h3 class="ui header">Log-in</h3>
+            <div class="field">
+                <label>Email</label> <input placeholder="Email" name="email">
+            </div>
+            <div class="field">
+                <label>Password</label> <input type="password" name="password">
+            </div>
+            <button class="ui blue submit button">Login</button>
+        </form>
+    </div>
+    <div class="column">
+        <img class="ui rounded image" src="https://cdn.glitch.com/fe0e714a-8b5b-4d98-912f-7fcd6fc90426%2Ficons-2.jpg?v=1627933583985">
+    </div>
+</div>
+<div class="ui center aligned middle aligned inverted blue footer segment">
+    <p>© 2021 WeatherTop Inc.</p>
+</div>

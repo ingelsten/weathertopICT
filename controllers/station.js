@@ -80,7 +80,6 @@ const station = {
     const newReading = {
       id: uuid.v1(),
       title: request.body.title,
-      artist: request.body.artist,
       weatherCode:request.body.weatherCode,
       temperature:request.body.temperature,
       windDirection:request.body.windDirection,

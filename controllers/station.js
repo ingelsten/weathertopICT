@@ -8,7 +8,7 @@ const uuid = require("uuid");
 const station = {
   index(request, response) {
     const stationId = request.params.id;
-    let shortestReading = null;
+    let latestReading = null;
     let fahrenheit = null;
     let beaufort = null;
     let compassDirection = null;
@@ -26,20 +26,20 @@ const station = {
     
     const station = stationStore.getStation(stationId);
     if (station.readings.length > 0) {
-    shortestReading = station.readings[station.readings.length-1];
-    fahrenheit = stationAnalytics.fahrenheit(Number(shortestReading.temperature));
-    beaufort = stationAnalytics.beaufort(Number(shortestReading.windSpeed));
-    compassDirection = stationAnalytics.compassDirection(Number(shortestReading.windDirection));
-    windChillTemp = stationAnalytics.windChillTemp(shortestReading.temperature, shortestReading.windSpeed);
-    codeToText = stationAnalytics.codeToText(Number(shortestReading.weatherCode));
-    codeToSymbol = stationAnalytics.codeToSymbol (Number(shortestReading.weatherCode));
+    latestReading = station.readings[station.readings.length-1];
+    fahrenheit = stationAnalytics.fahrenheit(Number(latestReading.temperature));
+    beaufort = stationAnalytics.beaufort(Number(latestReading.windSpeed));
+    compassDirection = stationAnalytics.compassDirection(Number(latestReading.windDirection));
+    windChillTemp = stationAnalytics.windChillTemp(latestReading.temperature, latestReading.windSpeed);
+    codeToText = stationAnalytics.codeToText(Number(latestReading.weatherCode));
+    codeToSymbol = stationAnalytics.codeToSymbol (Number(latestReading.weatherCode));
     minTemperature = stationAnalytics.getMinTemperature(station);
     maxTemperature = stationAnalytics.getMaxTemperature(station);
     minWindSpeed = stationAnalytics.getMinWindSpeed(station);
     maxWindSpeed= stationAnalytics.getMaxWindSpeed(station);
     minPressure = stationAnalytics.getMinPressure(station);
     maxPressure= stationAnalytics.getMaxPressure(station);
-   
+     
      }
     
     
@@ -48,7 +48,7 @@ const station = {
     const viewData = {
       name: "Station",
       station: stationStore.getStation(stationId),
-      shortestReading: shortestReading,
+      latestReading: latestReading,
       fahrenheit : fahrenheit,
       beaufort : beaufort,
       compassDirection:compassDirection,
@@ -60,8 +60,8 @@ const station = {
       minWindSpeed:minWindSpeed,
       maxWindSpeed:maxWindSpeed,
       minPressure:minPressure,
-      maxPressure:maxPressure
-      
+      maxPressure:maxPressure,
+       
     };
     response.render("station", viewData);
   },
@@ -79,13 +79,11 @@ const station = {
     const station = stationStore.getStation(stationId);
     const newReading = {
       id: uuid.v1(),
-      title: request.body.title,
       weatherCode:request.body.weatherCode,
       temperature:request.body.temperature,
       windDirection:request.body.windDirection,
       windSpeed:request.body.windSpeed,
-      pressure:request.body.pressure,
-      duration: Number(request.body.duration)
+      pressure:request.body.pressure
     };
     logger.debug("New Reading = ", newReading);
     stationStore.addReading(stationId, newReading);

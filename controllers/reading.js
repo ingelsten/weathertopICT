@@ -27,8 +27,7 @@ const reading = {
       windDirection:request.body.windDirection,
       windSpeed:Number(request.body.windSpeed),
       pressure:request.body.pressure,
-      duration: Number(request.body.duration)
-       };
+      };
     logger.debug(`Updating Reading ${readingId} from Station ${stationId}`);
     stationStore.updateReading(reading, newReading);
     response.redirect("/station/" + stationId);

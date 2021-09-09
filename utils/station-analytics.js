@@ -3,19 +3,7 @@
 const stationList = require('../models/station-store.js');
 
 const stationAnalytics = {
-  getShortestReading(station) {
-    let shortestReading = null;
-    if (station.readings.length > 0) {
-      shortestReading = station.readings[0];
-      for (let i = 1; i < station.readings.length; i++) {
-        shortestReading = station.readings[i];
-      }
-    }
-    return shortestReading;
-  },
-  
-
-  
+   
     getLatestReading(stationId) {
     let latestReading = null;
     const station = stationList.getStation(stationId)
@@ -26,87 +14,68 @@ const stationAnalytics = {
   
   },
   
-
-  
-    getMinTemperature(station) {
-    let minTemperature= null;
-    if (station.readings.length > 0) {
-     minTemperature = station.readings[0].temperature;
-      for (let i=0; i<station.readings.length; i++) {
-        if (station.readings[i].temperature < minTemperature) {
-          minTemperature = station.readings[i].temperature;
-        }
-      }
-    }
-    return minTemperature;
-  },
-  
-  
+ 
   getMinWindSpeed(station) {
-    let minWindSpeed= null;
-    if (station.readings.length > 0) {
-     minWindSpeed = station.readings[0].windSpeed;
-      for (let i=0; i<station.readings.length; i++) {
-        if (station.readings[i].windSpeed < minWindSpeed) {
-          minWindSpeed = station.readings[i].windSpeed;
-        }
-      }
+   let minWindSpeed = station.readings[0].windSpeed;
+  for (let i = 0; i < station.readings.length; i++ ) {
+    if (station.readings[i].windSpeed < minWindSpeed){
+      minWindSpeed = station.readings[i].windSpeed;
     }
-    return minWindSpeed;
-  },
+  }
+  return minWindSpeed;
+},
   
    getMaxWindSpeed(station) {
-    let maxWindSpeed= null;   
-    if (station.readings.length > 0) {
-     maxWindSpeed = station.readings[0].windSpeed;
-      for (let i=0; i<station.readings.length; i++) {
-        if (station.readings[i].windSpeed > maxWindSpeed) {
-          maxWindSpeed = station.readings[i].windSpeed;
-        }
-      }
+   let maxWindSpeed = station.readings[0].windSpeed
+  for (let i = 0; i < station.readings.length; i++ ) {
+    if (station.readings[i].windSpeed > maxWindSpeed){
+      maxWindSpeed = station.readings[i].windSpeed;
     }
-    return maxWindSpeed;
-  },
+  }
+  return maxWindSpeed;
+},
   
-    getMaxTemperature(station) {
-    let maxTemperature= null;
-    if (station.readings.length > 0) {
-     maxTemperature = station.readings[0].temperature;
-      for (let i=0; i<station.readings.length; i++) {
-        if (station.readings[i].temperature > maxTemperature) {
-          maxTemperature = station.readings[i].temperature;
-        }
-      }
+  getMinPressure(station) {
+  let minPressure = station.readings[0].pressure;
+  for (let i = 0; i < station.readings.length; i++ ) {
+    if (station.readings[i].pressure < minPressure){
+      minPressure = station.readings[i].pressure;
     }
-    return maxTemperature;
-  },
+  }
+  return minPressure;
+},
   
-    getMinPressure(station) {    
-    let minPressure= null;    
-    if (station.readings.length > 0) {
-     minPressure = station.readings[0].pressure;
-      for (let i=0; i<station.readings.length; i++) {
-        if (station.readings[i].pressure < minPressure) {
-          minPressure = station.readings[i].pressure;
-        }
-      }
+  getMaxPressure(station){
+  let maxPressure = station.readings[0].pressure
+  for (let i = 0; i < station.readings.length; i++ ) {
+    if (station.readings[i].pressure > maxPressure){
+      maxPressure = station.readings[i].pressure;
     }
-    return minPressure;
-  },
+  }
+  return maxPressure;
+},
   
-   getMaxPressure(station) {  
-    let maxPressure= null; 
-    if (station.readings.length > 0) {
-     maxPressure = station.readings[0].pressure;
-      for (let i=0; i<station.readings.length; i++) {
-        if (station.readings[i].pressure > maxPressure) {
-          maxPressure = station.readings[i].pressure;
-        }
-      }
+
+getMinTemperature(station){
+  let minTemperature = station.readings[0].temperature;
+  for (let i = 0; i < station.readings.length; i++ ) {
+    if (station.readings[i].temperature < minTemperature){
+      minTemperature = station.readings[i].temperature;
     }
-    return maxPressure;
-  },
-  
+  }
+  return minTemperature;
+},
+    
+ getMaxTemperature(station){
+  let maxTemperature = station.readings[0].temperature;
+  for (let i = 0; i < station.readings.length; i++ ) {
+    if (station.readings[i].temperature > maxTemperature){
+      maxTemperature = station.readings[i].temperature;
+    }
+  }
+  return maxTemperature;
+},
+
     
     fahrenheit(temperature) {
     let fahrenheit;

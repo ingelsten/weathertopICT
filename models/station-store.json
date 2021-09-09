@@ -4,100 +4,100 @@
       "id": "8b301260-d267-11eb-a8f7-591ae1064ded",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "name": "Clonakilty",
-      "latitude": "1.0",
-      "longitude": "2.0",
-      "duration": null,
+      "latitude": "52.31",
+      "longitude": "8.93",
       "readings": [
         {
-          "id": "a8bd85e0-f87f-11eb-aeaf-bfdf6af4da73",
+          "id": "19775810-118f-11ec-a92c-3901502f5ad3",
           "weatherCode": "100",
-          "temperature": "40",
-          "windDirection": "0",
-          "windSpeed": "40",
-          "pressure": "1000",
-          "duration": null
+          "temperature": "20",
+          "windDirection": "270",
+          "windSpeed": "15",
+          "pressure": "1020"
         },
         {
-          "id": "5f47fbf0-fac0-11eb-81cb-c5521cc15bd2",
-          "weatherCode": "100",
-          "temperature": "0",
-          "windDirection": "0",
-          "windSpeed": 117,
-          "pressure": "1000",
-          "duration": null
-        },
-        {
-          "id": "f1473260-10db-11ec-a425-e50427c0d70c",
-          "weatherCode": "500",
-          "temperature": "16",
-          "windDirection": "52",
-          "windSpeed": "22",
-          "pressure": "1090",
-          "duration": null
-        }
-      ]
-    },
-    {
-      "id": "a0c09030-f690-11eb-a926-f9529289c910",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "name": "Bandon",
-      "latitude": "0.0",
-      "longitude": "0.0",
-      "readings": [
-        {
-          "id": "a4ec5f90-f690-11eb-a926-f9529289c910",
-          "weatherCode": "100",
-          "temperature": "0",
-          "windDirection": "0",
-          "windSpeed": "1",
-          "pressure": "1000",
-          "duration": null
-        },
-        {
-          "id": "03648b90-f882-11eb-bd19-152bcb2c761d",
-          "weatherCode": "100",
-          "temperature": "1",
-          "windDirection": "0",
-          "windSpeed": "1",
-          "pressure": "1000",
-          "duration": null
-        },
-        {
-          "id": "1e547db0-f883-11eb-9313-99530872c480",
+          "id": "1c59de90-118f-11ec-a92c-3901502f5ad3",
           "weatherCode": "200",
-          "temperature": "10",
-          "windDirection": "100",
-          "windSpeed": "100",
-          "pressure": "1000",
-          "duration": null
+          "temperature": "25",
+          "windDirection": "180",
+          "windSpeed": "110",
+          "pressure": "1000"
+        },
+        {
+          "id": "1fe8f8c0-118f-11ec-a92c-3901502f5ad3",
+          "weatherCode": "200",
+          "temperature": "35",
+          "windDirection": "340",
+          "windSpeed": "40",
+          "pressure": "1010"
         }
       ],
       "duration": null
     },
     {
-      "id": "843242b0-f884-11eb-b90e-6b6956ff16e6",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "name": "Bantry",
-      "latitude": "0.0",
-      "longitude": "0.0",
+      "id": "21d9e9f0-11a8-11ec-b625-15940864ef10",
+      "userid": "1653c790-11a8-11ec-b625-15940864ef10",
+      "name": "Mick Collins",
+      "latitude": "52.30",
+      "longitude": "8.90",
       "readings": [
         {
-          "id": "86e49170-f884-11eb-b90e-6b6956ff16e6",
+          "id": "29912a00-11a8-11ec-b625-15940864ef10",
           "weatherCode": "100",
-          "temperature": "0",
-          "windDirection": "0",
-          "windSpeed": "1",
-          "pressure": "1000",
-          "duration": null
+          "temperature": "10",
+          "windDirection": "10",
+          "windSpeed": "10",
+          "pressure": "1010"
         },
         {
-          "id": "f6e5b5c0-0410-11ec-bbae-f5ea560d73a0",
-          "weatherCode": "500",
-          "temperature": "15",
-          "windDirection": "190",
-          "windSpeed": "50",
-          "pressure": "980",
-          "duration": null
+          "id": "32726b20-11a8-11ec-b625-15940864ef10",
+          "weatherCode": "200",
+          "temperature": "20",
+          "windDirection": "300",
+          "windSpeed": "20",
+          "pressure": "1020"
+        },
+        {
+          "id": "3b6c6460-11a8-11ec-b625-15940864ef10",
+          "weatherCode": "300",
+          "temperature": "40",
+          "windDirection": "270",
+          "windSpeed": "40",
+          "pressure": "1000"
+        }
+      ],
+      "duration": null
+    },
+    {
+      "id": "6cce4c80-11a8-11ec-b625-15940864ef10",
+      "userid": "1653c790-11a8-11ec-b625-15940864ef10",
+      "name": "Homer Simpson",
+      "latitude": "53.01",
+      "longitude": "25.10",
+      "readings": [
+        {
+          "id": "7387cba0-11a8-11ec-b625-15940864ef10",
+          "weatherCode": "100",
+          "temperature": "10",
+          "windDirection": "10",
+          "windSpeed": "10",
+          "pressure": "1010"
+        },
+        {
+          "id": "7e1c13f0-11a8-11ec-b625-15940864ef10",
+          "weatherCode": "200",
+          "temperature": "20",
+          "windDirection": "270",
+          "windSpeed": "30",
+          "pressure": "1020"
+        },
+        {
+          "id": "8e9b40c0-11a8-11ec-b625-15940864ef10",
+          "weatherCode": "300",
+          "temperature": "40",
+          "windDirection": "360",
+          "windSpeed": "40",
+          "pressure": "1000"
         }
       ],
       "duration": null

@@ -21,7 +21,7 @@
         <div class="column">
             <div class="ui inverted blue segment">
                 <h3>Temperature: &ensp; <i class="white temperature low icon"></i></h3>
-                <p> {{shortestReading.temperature}} Celsius</p>
+                <p> {{latestReading.temperature}} Celsius</p>
                 <!--  Fahrenheit calculation done with HTML code -->
                 <p>{{fahrenheit}} Fahrenheit</p>
                 <p>Min: {{minTemperature}} C</p>
@@ -41,7 +41,7 @@
         <div class="column">
             <div class="ui inverted purple segment">
                 <h3>Pressure: &ensp; <i class="white chart bar icon"></i></h3>
-                <p>{{shortestReading.pressure}} hPa </p>
+                <p>{{latestReading.pressure}} hPa </p>
                 <p>Min: {{minPressure}} hPa</p>
                 <p>Max: {{maxPressure}} hPa</p>
             </div>

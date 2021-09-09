@@ -19,11 +19,20 @@
         },
         {
           "id": "5f47fbf0-fac0-11eb-81cb-c5521cc15bd2",
-          "weatherCode": "300",
+          "weatherCode": "100",
           "temperature": "0",
           "windDirection": "0",
-          "windSpeed": "1",
+          "windSpeed": 117,
           "pressure": "1000",
+          "duration": null
+        },
+        {
+          "id": "f1473260-10db-11ec-a425-e50427c0d70c",
+          "weatherCode": "500",
+          "temperature": "16",
+          "windDirection": "52",
+          "windSpeed": "22",
+          "pressure": "1090",
           "duration": null
         }
       ]

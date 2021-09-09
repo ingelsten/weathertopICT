@@ -35,33 +35,33 @@
       "duration": null
     },
     {
-      "id": "21d9e9f0-11a8-11ec-b625-15940864ef10",
-      "userid": "1653c790-11a8-11ec-b625-15940864ef10",
-      "name": "Mick Collins",
-      "latitude": "52.30",
-      "longitude": "8.90",
+      "id": "05a39850-11ab-11ec-b625-15940864ef10",
+      "userid": "fa3061b0-11aa-11ec-b625-15940864ef10",
+      "name": "Clonakilty",
+      "latitude": "52.301",
+      "longitude": "8.91",
       "readings": [
         {
-          "id": "29912a00-11a8-11ec-b625-15940864ef10",
+          "id": "10980200-11ab-11ec-b625-15940864ef10",
           "weatherCode": "100",
           "temperature": "10",
-          "windDirection": "10",
+          "windDirection": "270",
           "windSpeed": "10",
           "pressure": "1010"
         },
         {
-          "id": "32726b20-11a8-11ec-b625-15940864ef10",
+          "id": "1a81b270-11ab-11ec-b625-15940864ef10",
           "weatherCode": "200",
           "temperature": "20",
           "windDirection": "300",
-          "windSpeed": "20",
+          "windSpeed": "30",
           "pressure": "1020"
         },
         {
-          "id": "3b6c6460-11a8-11ec-b625-15940864ef10",
+          "id": "267abae0-11ab-11ec-b625-15940864ef10",
           "weatherCode": "300",
           "temperature": "40",
-          "windDirection": "270",
+          "windDirection": "360",
           "windSpeed": "40",
           "pressure": "1000"
         }
@@ -69,22 +69,22 @@
       "duration": null
     },
     {
-      "id": "6cce4c80-11a8-11ec-b625-15940864ef10",
-      "userid": "1653c790-11a8-11ec-b625-15940864ef10",
-      "name": "Homer Simpson",
-      "latitude": "53.01",
-      "longitude": "25.10",
+      "id": "d282a5a0-11ab-11ec-b625-15940864ef10",
+      "userid": "bf0f6620-11ab-11ec-b625-15940864ef10",
+      "name": "Clonakilty",
+      "latitude": "52.101",
+      "longitude": "8.64",
       "readings": [
         {
-          "id": "7387cba0-11a8-11ec-b625-15940864ef10",
+          "id": "e1561e40-11ab-11ec-b625-15940864ef10",
           "weatherCode": "100",
           "temperature": "10",
-          "windDirection": "10",
+          "windDirection": "100",
           "windSpeed": "10",
           "pressure": "1010"
         },
         {
-          "id": "7e1c13f0-11a8-11ec-b625-15940864ef10",
+          "id": "f6e14140-11ab-11ec-b625-15940864ef10",
           "weatherCode": "200",
           "temperature": "20",
           "windDirection": "270",
@@ -92,7 +92,7 @@
           "pressure": "1020"
         },
         {
-          "id": "8e9b40c0-11a8-11ec-b625-15940864ef10",
+          "id": "0395f890-11ac-11ec-b625-15940864ef10",
           "weatherCode": "300",
           "temperature": "40",
           "windDirection": "360",

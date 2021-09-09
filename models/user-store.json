@@ -20,6 +20,20 @@
       "email": "aingelsten@mainline.ie",
       "password": "Kracka106!",
       "id": "1653c790-11a8-11ec-b625-15940864ef10"
+    },
+    {
+      "firstname": "Anders",
+      "lastname": "Panders",
+      "email": "a@b.com",
+      "password": "Kracka106!",
+      "id": "fa3061b0-11aa-11ec-b625-15940864ef10"
+    },
+    {
+      "firstname": "Anders",
+      "lastname": "Landers",
+      "email": "c@b.com",
+      "password": "Kracka106!",
+      "id": "bf0f6620-11ab-11ec-b625-15940864ef10"
     }
   ]
 }
